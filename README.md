@@ -64,6 +64,8 @@ from low to high levels in the dependency graph)
 
 The following commands set up a local test network and run some transfers between the
 microchains owned by a single wallet.
+git add .
+git commit -m "Linera is Good Project Ever"
 
 ```bash
 # Make sure to compile the Linera binaries and add them in the $PATH.
@@ -78,7 +80,6 @@ source /dev/stdin <<<"$(linera net helper 2>/dev/null)"
 # is used to set the two environment variables LINERA_{WALLET,STORAGE}.)
 linera_spawn_and_read_wallet_variables \
 linera net up
-
 # Print the set of validators.
 linera query-validators
 
